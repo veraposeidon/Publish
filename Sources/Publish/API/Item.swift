@@ -19,11 +19,20 @@ public struct Item<Site: Website>: AnyItem, Hashable {
     /// this item is for.
     public var metadata: Site.ItemMetadata
     public var tags: [Tag]
-    public var path: Path { makeAbsolutePath() }
+    public var path: Path {
+        set {
+            userDefinePath = newValue
+        }
+        get {
+            userDefinePath ?? makeAbsolutePath()
+        }
+    }
     public var content: Content
     public var rssProperties: ItemRSSProperties
 
     internal let relativePath: Path
+
+    private var userDefinePath: Path?
 
     /// Initialize a new item programmatically. You can also create items from
     /// Markdown using the `addMarkdownFiles` step.
