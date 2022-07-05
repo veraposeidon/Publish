@@ -19,8 +19,12 @@ let package = Package(
         .package(
             name: "Ink",
             url: "https://github.com/veraposeidon/ink.git",
-            from: "0.5.2"
+            from: "0.6.0"
         ),
+//        .package(
+//            name: "Ink",
+//            path: "../Ink"
+//        ),
         .package(
             name: "Plot",
             url: "https://github.com/johnsundell/plot.git",
