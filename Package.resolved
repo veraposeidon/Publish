@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "Ink",
+        "repositoryURL": "https://github.com/veraposeidon/ink.git",
+        "state": {
+          "branch": null,
+          "revision": "801690307116ddbc22973220e9069e64c574ebff",
+          "version": "0.6.1"
+        }
+      },
+      {
         "package": "Plot",
         "repositoryURL": "https://github.com/johnsundell/plot.git",
         "state": {
